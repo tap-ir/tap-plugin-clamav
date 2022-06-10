@@ -18,7 +18,7 @@ use anyhow::anyhow;
 use clam_client::client::ClamClient;
 use clam_client::response::ClamScanResult;
 
-plugin!("clamav", "Malware", "ClamAV", ClamAvPlugin, Arguments);
+plugin!("clamav", "Malware", "Scan file content with ClamAV", ClamAvPlugin, Arguments);
 
 #[derive(Debug, Serialize, Deserialize,JsonSchema)]
 pub struct Arguments
